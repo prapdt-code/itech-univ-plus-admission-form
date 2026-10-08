@@ -1,6 +1,6 @@
 # iTech Univ Plus Admission Form
 
-A student project that updates an original HTML-only college admission form using HTML, CSS, and vanilla JavaScript. The form keeps the original institute details and application sections while making the layout easier to use on desktop and mobile.
+A student project that updates an original HTML only college admission form using HTML, CSS, and vanilla JavaScript. The form keeps the original institute details and application sections while making the layout easier to use on desktop and mobile.
 
 **Tagline:** “The right place for excellency”
 
@@ -12,7 +12,7 @@ A student project that updates an original HTML-only college admission form usin
 
 - Student, parent, contact, and education details
 - Course, tuition, and class-time choices
-- Browser-based required-field and email validation
+- Browser-based required field and email validation
 - Responsive styling and a clear-form button
 
 ## Project files

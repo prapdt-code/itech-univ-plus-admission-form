@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Admission application form for iTech Univ Plus.">
+  <title>Admission Form | iTech Univ Plus</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="masthead">
+      <div class="brand-mark" aria-hidden="true">i+</div>
+      <div class="brand-copy">
+        <p class="eyebrow">ADMISSION APPLICATION</p>
+        <h1>iTech Univ Plus</h1>
+        <p class="tagline">The right place for excellency</p>
+      </div>
+      <div class="contact-block">
+        <p>Hetauda-4, School Road</p>
+        <p><a href="tel:0575544144">057-5544144</a> · <a href="tel:9874561248">9874561248</a></p>
+      </div>
+    </header>
+
+    <div class="form-intro">
+      <div><h2>Student admission form</h2><p>Please complete the details below in clear block letters.</p></div>
+      <label class="date-field" for="application-date">Application date<input id="application-date" name="applicationDate" type="date" required></label>
+    </div>
+
+    <form id="admission-form">
+      <section class="form-section" aria-labelledby="personal-heading">
+        <div class="section-heading"><span>01</span><h3 id="personal-heading">Personal details</h3></div>
+        <div class="field-grid three-col">
+          <label>First name<input name="firstName" type="text" placeholder="e.g. Asha" autocomplete="given-name" required></label>
+          <label>Middle name <span class="optional">(optional)</span><input name="middleName" type="text" autocomplete="additional-name"></label>
+          <label>Last name<input name="lastName" type="text" autocomplete="family-name" required></label>
+          <label>Date of birth<input name="dateOfBirth" type="date" required></label>
+          <fieldset class="choice-field"><legend>Gender</legend><div class="choice-row">
+            <label class="choice"><input type="radio" name="gender" value="Male" required> Male</label>
+            <label class="choice"><input type="radio" name="gender" value="Female"> Female</label>
+            <label class="choice"><input type="radio" name="gender" value="Other"> Other</label>
+          </div></fieldset>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="parent-heading">
+        <div class="section-heading"><span>02</span><h3 id="parent-heading">Parent / guardian details</h3></div>
+        <div class="field-grid two-col">
+          <label>Father's name<input name="fatherName" type="text" autocomplete="off"></label>
+          <label>Contact number<input name="fatherContact" type="tel" autocomplete="tel"></label>
+          <label>Mother's name<input name="motherName" type="text" autocomplete="off"></label>
+          <label>Contact number<input name="motherContact" type="tel" autocomplete="tel"></label>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="contact-heading">
+        <div class="section-heading"><span>03</span><h3 id="contact-heading">Contact details</h3></div>
+        <div class="field-grid two-col">
+          <label class="span-two">Permanent address<input name="address" type="text" autocomplete="street-address" required></label>
+          <label>Email address<input name="email" type="email" autocomplete="email"></label>
+          <label>Mobile number<input name="mobile" type="tel" autocomplete="tel" required></label>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="education-heading">
+        <div class="section-heading"><span>04</span><h3 id="education-heading">Education details</h3></div>
+        <fieldset class="choice-field"><legend>Level completed / currently studying</legend><div class="choice-row wrap">
+          <label class="choice"><input type="checkbox" name="educationLevel" value="SEE"> SEE</label>
+          <label class="choice"><input type="checkbox" name="educationLevel" value="XI"> XI</label>
+          <label class="choice"><input type="checkbox" name="educationLevel" value="XII"> XII</label>
+          <label class="choice"><input type="checkbox" name="educationLevel" value="Bachelor"> Bachelor's</label>
+        </div></fieldset>
+        <div class="field-grid two-col education-fields">
+          <label>Name of school / college<input name="schoolName" type="text"></label>
+          <label>School / college address<input name="schoolAddress" type="text"></label>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="source-heading">
+        <div class="section-heading"><span>05</span><h3 id="source-heading">How did you hear about us?</h3></div>
+        <div class="choice-row wrap source-options">
+          <label class="choice"><input type="checkbox" name="source" value="Teachers"> From teachers</label>
+          <label class="choice"><input type="checkbox" name="source" value="Exhibition or seminar"> Exhibition or seminar</label>
+          <label class="choice"><input type="checkbox" name="source" value="Friends or family"> Friends, parents or relatives</label>
+          <label class="choice"><input type="checkbox" name="source" value="Online advertisement"> Online advertisement</label>
+          <label class="choice"><input type="checkbox" name="source" value="School or college"> School or college</label>
+          <label class="choice other-choice"><input type="checkbox" name="source" value="Other"> Other<input class="inline-input" name="sourceOther" type="text" aria-label="Other source"></label>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="course-heading">
+        <div class="section-heading"><span>06</span><h3 id="course-heading">Course reference</h3></div>
+        <fieldset class="course-group"><legend>Preparation class (academic)</legend><div class="choice-row wrap">
+          <label class="choice"><input type="checkbox" name="course" value="Staff nurse"> Staff nurse</label><label class="choice"><input type="checkbox" name="course" value="HA"> HA</label><label class="choice"><input type="checkbox" name="course" value="Overseer (academic)"> Overseer</label><label class="choice"><input type="checkbox" name="course" value="Lab"> Lab</label><label class="choice"><input type="checkbox" name="course" value="Pharmacy"> Pharmacy</label><label class="choice"><input type="checkbox" name="course" value="Radiology"> Radiology</label><label class="choice"><input type="checkbox" name="course" value="Dental"> Dental</label><label class="choice"><input type="checkbox" name="course" value="Other academic"> Other</label>
+        </div></fieldset>
+        <fieldset class="course-group"><legend>Bachelor's level</legend><div class="choice-row wrap">
+          <label class="choice"><input type="checkbox" name="course" value="Forestry"> Forestry</label><label class="choice"><input type="checkbox" name="course" value="Nursing"> Nursing</label><label class="choice"><input type="checkbox" name="course" value="CMAT"> CMAT</label><label class="choice"><input type="checkbox" name="course" value="Ag/Vet/AH"> Ag / Vet / AH</label><label class="choice"><input type="checkbox" name="course" value="Other bachelor's"> Other</label>
+        </div></fieldset>
+        <fieldset class="course-group"><legend>Preparation class (professional)</legend><div class="choice-row wrap">
+          <label class="choice"><input type="checkbox" name="course" value="Banking"> Banking</label><label class="choice"><input type="checkbox" name="course" value="ASI/Inspector"> ASI / Inspector</label><label class="choice"><input type="checkbox" name="course" value="Overseer (professional)"> Overseer</label><label class="choice"><input type="checkbox" name="course" value="Public Service Commission"> Public Service Commission</label><label class="choice"><input type="checkbox" name="course" value="Other professional"> Other</label>
+        </div></fieldset>
+        <fieldset class="course-group"><legend>Computer training</legend><div class="choice-row wrap">
+          <label class="choice"><input type="checkbox" name="course" value="Basic software (3 months)"> Basic software (3 months)</label><label class="choice"><input type="checkbox" name="course" value="Diploma software (6 months)"> Diploma software (6 months)</label><label class="choice"><input type="checkbox" name="course" value="Basic hardware"> Basic hardware</label><label class="choice"><input type="checkbox" name="course" value="Diploma software (12 months)"> Diploma software (12 months)</label><label class="choice"><input type="checkbox" name="course" value="Accounting package"> Accounting package</label><label class="choice"><input type="checkbox" name="course" value="Other computer"> Other</label>
+        </div></fieldset>
+        <fieldset class="course-group"><legend>Language preparation</legend><div class="choice-row wrap">
+          <label class="choice"><input type="checkbox" name="course" value="English"> English</label><label class="choice"><input type="checkbox" name="course" value="Japanese"> Japanese</label><label class="choice"><input type="checkbox" name="course" value="Other language"> Other</label>
+        </div></fieldset>
+        <div class="field-grid two-col tuition-row">
+          <label>Tuition class subjects<input name="tuitionSubjects" type="text" placeholder="Subjects"></label>
+          <fieldset class="choice-field"><legend>Tuition class level</legend><div class="choice-row wrap">
+            <label class="choice"><input type="checkbox" name="tuitionLevel" value="SEE"> SEE</label><label class="choice"><input type="checkbox" name="tuitionLevel" value="XI"> XI</label><label class="choice"><input type="checkbox" name="tuitionLevel" value="XII"> XII</label><label class="choice"><input type="checkbox" name="tuitionLevel" value="Bachelor"> Bachelor's</label><label class="choice"><input type="checkbox" name="tuitionLevel" value="Master's"> Master's</label>
+          </div></fieldset>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="schedule-heading">
+        <div class="section-heading"><span>07</span><h3 id="schedule-heading">Class preference</h3></div>
+        <div class="field-grid two-col">
+          <label>Preferred class time<select name="classTime"><option value="">Choose a time</option><option>6am–8am</option><option>8am–10am</option><option>10am–12pm</option><option>12pm–2pm</option></select></label>
+          <label>Submission time<input name="submissionTime" type="time"></label>
+        </div>
+      </section>
+
+      <aside class="fee-note"><h3>Fee details</h3><ol><li>All fees should be paid at the time of admission.</li><li>Fees once paid are not refundable.</li></ol></aside>
+      <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+      <div class="form-actions"><button class="button button-light" type="reset">Clear form</button><button class="button button-primary" type="submit">Save application</button></div>
+      <p class="privacy-note">Please check your details before saving. This sample form stores no information on a server.</p>
+    </form>
+    <footer>iTech Univ Plus <span>·</span> Hetauda-4, School Road</footer>
+  </main>
+</body>
+</html>
